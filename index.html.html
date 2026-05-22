@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Debt Relief Quote | TurboDebt</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1a7a4a;--green-light:#e8f7ee;--green-mid:#2ecc71;
+  --navy:#0d1b2a;--white:#fff;--off:#f8fafc;
+  --gray:#6b7280;--border:#e2e8f0;--text:#1a202c;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--off);color:var(--text);line-height:1.6;overflow-x:hidden}
+
+nav{
+  background:var(--navy);padding:14px 24px;
+  display:flex;justify-content:space-between;align-items:center;
+  position:sticky;top:0;z-index:100;
+}
+.logo{font-family:'Sora',sans-serif;font-weight:800;font-size:20px;color:#fff}
+.logo span{color:var(--green-mid)}
+.nav-phone{
+  display:flex;align-items:center;gap:7px;
+  background:var(--green);color:white;text-decoration:none;
+  padding:9px 18px;border-radius:8px;font-weight:600;font-size:15px;
+}
+
+.hero{background:var(--navy);padding:52px 24px 0;text-align:center}
+.hero-inner{max-width:600px;margin:0 auto}
+
+.badge{
+  display:inline-block;background:var(--green-light);color:var(--green);
+  border-radius:100px;padding:5px 16px;font-size:13px;font-weight:600;
+  margin-bottom:20px;border:1px solid rgba(26,122,74,0.2);
+}
+h1{
+  font-family:'Sora',sans-serif;
+  font-size:clamp(26px,5vw,46px);font-weight:800;
+  color:#fff;line-height:1.15;margin-bottom:14px;letter-spacing:-1px;
+}
+h1 span{color:var(--green-mid)}
+.sub{font-size:clamp(15px,2vw,17px);color:rgba(255,255,255,0.65);max-width:460px;margin:0 auto 32px}
+
+/* CARD */
+.card{
+  background:#fff;border-radius:18px 18px 0 0;
+  padding:32px 28px 36px;
+  box-shadow:0 -8px 40px rgba(0,0,0,0.15);
+}
+.card-q{font-family:'Sora',sans-serif;font-size:clamp(16px,2.2vw,20px);font-weight:700;margin-bottom:4px}
+.card-hint{font-size:13px;color:var(--gray);margin-bottom:24px}
+
+.opts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:20px}
+.opt{
+  display:block;text-decoration:none;color:var(--text);
+  background:var(--off);border:2px solid var(--border);
+  border-radius:12px;padding:18px 8px;text-align:center;
+  transition:all .18s;position:relative;
+}
+.opt:hover,.opt:focus{border-color:var(--green);background:var(--green-light);transform:translateY(-2px)}
+.opt .amt{font-family:'Sora',sans-serif;font-size:clamp(13px,1.8vw,17px);font-weight:700;display:block;margin-bottom:3px}
+.opt .est{font-size:11px;color:var(--green);font-weight:600}
+.opt.hot{border-color:var(--green);background:var(--green-light)}
+.opt.hot::before{
+  content:'MOST COMMON';position:absolute;top:-10px;left:50%;transform:translateX(-50%);
+  background:var(--green);color:#fff;font-size:9px;font-weight:700;
+  letter-spacing:.8px;padding:2px 9px;border-radius:100px;white-space:nowrap;
+}
+
+.trust{
+  display:flex;align-items:center;justify-content:center;
+  gap:14px;flex-wrap:wrap;padding-top:16px;
+  border-top:1px solid var(--border);font-size:12px;color:var(--gray);font-weight:500;
+}
+.stars{color:#f5a623}
+
+/* STATS */
+.stats{background:#fff;border-bottom:1px solid var(--border);padding:20px 24px}
+.stats-row{
+  max-width:600px;margin:0 auto;
+  display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:10px;
+}
+.snum{font-family:'Sora',sans-serif;font-size:clamp(20px,3vw,26px);font-weight:800;color:var(--green);display:block}
+.slbl{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+.sdiv{width:1px;height:34px;background:var(--border)}
+
+/* CTA */
+.cta{background:var(--navy);padding:60px 24px;text-align:center}
+h2{font-family:'Sora',sans-serif;font-size:clamp(21px,3.5vw,30px);font-weight:800;color:#fff;line-height:1.2;margin-bottom:10px;letter-spacing:-.5px}
+.cta-sub{font-size:15px;color:rgba(255,255,255,0.6);max-width:400px;margin:0 auto 28px}
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-p{
+  background:var(--green);color:#fff;border:none;border-radius:10px;
+  padding:15px 30px;font-family:'Sora',sans-serif;font-size:16px;font-weight:700;
+  text-decoration:none;display:inline-flex;align-items:center;gap:7px;
+  box-shadow:0 4px 18px rgba(26,122,74,0.4);transition:all .2s;cursor:pointer;
+}
+.btn-p:hover{background:#15623c;transform:translateY(-2px)}
+.btn-s{
+  background:rgba(255,255,255,0.08);color:#fff;
+  border:1px solid rgba(255,255,255,0.2);border-radius:10px;
+  padding:15px 22px;font-size:15px;font-weight:500;
+  text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all .2s;
+}
+.btn-s:hover{background:rgba(255,255,255,0.14)}
+.cta-note{font-size:12px;color:rgba(255,255,255,0.35);margin-top:12px}
+
+/* FOOTER + DISCLAIMER */
+footer{background:var(--navy);padding:20px 24px 0;border-top:1px solid rgba(255,255,255,0.07)}
+.foot-inner{
+  max-width:600px;margin:0 auto;
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.flogo{font-family:'Sora',sans-serif;font-weight:800;font-size:17px;color:#fff}
+.flogo span{color:var(--green-mid)}
+.flinks{display:flex;gap:14px;flex-wrap:wrap}
+.flinks a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:12px;transition:color .2s}
+.flinks a:hover{color:rgba(255,255,255,0.8)}
+
+.disclaimer{
+  max-width:600px;margin:0 auto;
+  padding:16px 0 28px;
+  font-size:10.5px;color:rgba(255,255,255,0.28);line-height:1.75;
+}
+.disclaimer a{color:rgba(255,255,255,0.4);text-decoration:underline}
+.disclaimer a:hover{color:rgba(255,255,255,0.65)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.hero-inner>*{animation:fadeUp .5s ease both}
+.hero-inner>*:nth-child(1){animation-delay:.05s}
+.hero-inner>*:nth-child(2){animation-delay:.13s}
+.hero-inner>*:nth-child(3){animation-delay:.22s}
+.hero-inner>*:nth-child(4){animation-delay:.32s}
+
+@media(max-width:500px){
+  .opts{grid-template-columns:1fr}
+  .sdiv{display:none}
+  .card{padding:26px 18px 30px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Turbo<span>Debt</span></div>
+  <a class="nav-phone" href="tel:+18665408857">📞 (866) 540-8857</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="badge">✓ Trusted by 650,000+ Americans</div>
+    <h1>What's Your<br><span>Estimated Debt Balance?</span></h1>
+    <p class="sub">Pay up to 45% less than you owe. Free consultation and zero upfront fees.</p>
+
+    <div class="card">
+      <p class="card-q">Select your debt range to see your savings</p>
+      <p class="card-hint">Takes 60 seconds · No credit check required</p>
+      <div class="opts">
+        <a class="opt" href="#">
+          <span class="amt">Under $10,000</span>
+          <span class="est">Save up to $3,500</span>
+        </a>
+        <a class="opt hot" href="#">
+          <span class="amt">$10,000 – $25,000</span>
+          <span class="est">Save up to $8,500</span>
+        </a>
+        <a class="opt" href="#">
+          <span class="amt">More than $25,000</span>
+          <span class="est">Save up to $22,000+</span>
+        </a>
+      </div>
+      <div class="trust">
+        <span><span class="stars">★★★★★</span> 4.9 Trustpilot · 11,786 reviews</span>
+        <span>✓ No upfront fees</span>
+        <span>🔒 100% confidential</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stats-row">
+    <div class="pstat" style="text-align:center"><span class="snum">650K+</span><span class="slbl">Americans Helped</span></div>
+    <div class="sdiv"></div>
+    <div class="pstat" style="text-align:center"><span class="snum">46%</span><span class="slbl">Avg. Savings*</span></div>
+    <div class="sdiv"></div>
+    <div class="pstat" style="text-align:center"><span class="snum">24–48mo</span><span class="slbl">To Debt-Free</span></div>
+    <div class="sdiv"></div>
+    <div class="pstat" style="text-align:center"><span class="snum">$0</span><span class="slbl">Upfront Fees</span></div>
+  </div>
+</div>
+
+<div id="cta" class="cta">
+  <h2>Ready to See Exactly<br>How Much You Can Save?</h2>
+  <p class="cta-sub">Free consultation · No obligation · Results in 60 seconds</p>
+  <div class="btns">
+    <a href="#" class="btn-p">Get My Free Quote →</a>
+    <a href="tel:+18665408857" class="btn-s">📞 Call Now</a>
+  </div>
+  <p class="cta-note">✓ Free &nbsp;•&nbsp; ✓ No credit check &nbsp;•&nbsp; ✓ Zero upfront fees</p>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="flogo">Turbo<span>Debt</span></div>
+    <div class="flinks">
+      <a href="https://www.turbodebt.com/policies/terms-of-service">Terms of Service</a>
+      <a href="https://www.turbodebt.com/policies">Privacy Policies</a>
+      <a href="https://funnels.turbodebt.com/accessibility/">Accessibility Statement</a>
+    </div>
+  </div>
+  <div class="disclaimer">
+    <p>© 2026 All Rights Reserved. | <a href="https://www.turbodebt.com/policies/terms-of-service">Terms of Service</a> | <a href="https://www.turbodebt.com/policies">Privacy Policies</a> | <a href="https://funnels.turbodebt.com/accessibility/">Accessibility Statement</a></p>
+    <br>
+    <p>IMPORTANT DISCLAIMERS: Please note that all calls with the company may be recorded or monitored for quality assurance and training purposes. *Clients who are able to stay with the program and get all their debt settled realize approximate savings of 46% before fees, or 25% including our fees, over 24 to 48 months. All claims are based on enrolled debts. Not all debts are eligible for enrollment. Not all clients complete our program for various reasons, including their ability to save sufficient funds. Estimates based on prior results, which will vary based on specific circumstances. We do not guarantee that your debts will be lowered by a specific amount or percentage or that you will be debt-free within a specific period of time. We do not assume consumer debt, make monthly payments to creditors or provide tax, bankruptcy, accounting or legal advice or credit repair services. Not available in all states. Please contact a tax professional to discuss tax consequences of settlement. Please consult with a bankruptcy attorney for more information on bankruptcy. Depending on your state, we may be available to recommend a local tax professional and/or bankruptcy attorney. Read and understand all program materials prior to enrollment. The use of debt settlement services will likely adversely affect your creditworthiness, may result in you being subject to collections or being sued by creditors or collectors and may increase the outstanding balances of your enrolled accounts due to the accrual of fees and interest. The company and its affiliates are not lenders, creditors, or debt collectors. This is not a loan. Our representatives have helped thousands of consumers throughout their careers. Testimonials are actual customer experiences and individual opinions, and may not be illustrative of all experiences with the company or its affiliates. C.P.D. Reg. No. TC5817</p>
+  </div>
+</footer>
+
+</body>
+</html>
